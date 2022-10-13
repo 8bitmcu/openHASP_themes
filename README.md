@@ -7,13 +7,17 @@ Notes:
 
 
 page 1
+
 ![alt text](assets/page1.jpg)
 
 page 2
+
 ![alt text](assets/page2.jpg)
 
 page 3
+
 ![alt text](assets/page3.jpg)
 
 page 4
+
 ![alt text](assets/page4.jpg)
