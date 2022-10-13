@@ -6,5 +6,14 @@ Notes:
  - Media controls for the Samsung TV on page 2 aren't implemented
 
 
+page 1
+![alt text](assets/page1.jpg)
 
-![alt text](assets/page1.jpg)![alt text](assets/page2.jpg)![alt text](assets/page3.jpg)![alt text](assets/page4.jpg)
+page 2
+![alt text](assets/page2.jpg)
+
+page 3
+![alt text](assets/page3.jpg)
+
+page 4
+![alt text](assets/page4.jpg)
