@@ -1,0 +1,173 @@
+
+openhasp:
+  plate02:
+    objects:
+      
+      # page0 datetime
+      - obj: "p0b1"
+        properties:
+          "text": '{{ as_timestamp(now())|timestamp_custom("%Y/%m/%d %I:%M %p") }}'
+
+      # page1 temperature card
+      - obj: "p1b4"
+        properties:
+          "text": '{{ states("sensor.usbsensor_05_dht11_temperature") }}°C'
+      # page1 humidity card
+      - obj: "p1b7"
+        properties:
+          "text": '{{ states("sensor.usbsensor_05_dht11_humidity") }}%'
+
+      # page1 ceiling lamp
+      - obj: "p1b11" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.ceiling_light_group"
+      - obj: "p1b15" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("light.ceiling_light_group", "on") else "Off" }}'
+      - obj: "p1b13" # icon
+        properties:
+          "text_color": '{{ "#e88c03" if is_state("light.ceiling_light_group", "on") else "#6F6F6F" }}'
+      - obj: "p1b12" # icon background
+        properties:
+          "bg_color": '{{ "#493416" if is_state("light.ceiling_light_group", "on") else "#2C2C2C" }}'
+
+      # page1 A/C Fan
+      - obj: "p1b21" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.s31_03"
+      - obj: "p1b25" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("switch.s31_03", "on") else "Off" }}'
+      - obj: "p1b23" # icon
+        properties:
+          "text_color": '{{ "#4caf50" if is_state("switch.s31_03", "on") else "#6F6F6F" }}'
+      - obj: "p1b22" # icon background
+        properties:
+          "bg_color": '{{ "#253926" if is_state("switch.s31_03", "on") else "#2C2C2C" }}'
+
+      # Window Fan
+      - obj: "p1b31" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.s31_02"
+      - obj: "p1b35" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("switch.s31_02", "on") else "Off" }}'
+      - obj: "p1b33" # icon
+        properties:
+          "text_color": '{{ "#4caf50" if is_state("switch.s31_02", "on") else "#6F6F6F" }}'
+      - obj: "p1b32" # icon background
+        properties:
+          "bg_color": '{{ "#253926" if is_state("switch.s31_02", "on") else "#2C2C2C" }}'
+
+      # Bedside Lamp
+      - obj: "p2b11" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.tasmota_3"
+      - obj: "p2b15" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("light.tasmota_3", "on") else "Off" }}'
+      - obj: "p2b13" # icon
+        properties:
+          "text_color": '{{ "#e88c03" if is_state("light.tasmota_3", "on") else "#6F6F6F" }}'
+      - obj: "p2b12" # icon background
+        properties:
+          "bg_color": '{{ "#493416" if is_state("light.tasmota_3", "on") else "#2C2C2C" }}'
+      - obj: "p2b16" # slider
+        properties:
+          "val": "{{ state_attr('light.tasmota_3', 'brightness') if state_attr('light.tasmota_3', 'brightness') != None else 0 }}"
+        event:
+          "changed":
+            - service: light.turn_on
+              data:
+                entity_id: light.tasmota_3
+                brightness:  "{{ val }}"
+          "up":
+            - service: light.turn_on
+              data:
+                entity_id: light.tasmota_3
+                brightness:  "{{ val }}"
+
+      # Neopixel
+      - obj: "p2b21" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.wled_master"
+      - obj: "p2b25" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("light.wled_master", "on") else "Off" }}'
+      - obj: "p2b23" # icon
+        properties:
+          "text_color": '{{ "#e88c03" if is_state("light.wled_master", "on") else "#6F6F6F" }}'
+      - obj: "p2b22" # icon background
+        properties:
+          "bg_color": '{{ "#493416" if is_state("light.wled_master", "on") else "#2C2C2C" }}'
+      - obj: "p2b26" # slider
+        properties:
+          "val": "{{ state_attr('light.wled_master', 'brightness') if state_attr('light.wled_master', 'brightness') != None else 0 }}"
+        event:
+          "changed":
+            - service: light.turn_on
+              data:
+                entity_id: light.wled_master
+                brightness:  "{{ val }}"
+          "up":
+            - service: light.turn_on
+              data:
+                entity_id: light.wled_master
+                brightness:  "{{ val }}"
+
+      # Samsung TV
+      - obj: "p2b31" # button
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "media_player.emby_kodi_samsungkodi"
+      - obj: "p2b35" # on/off label
+        properties:
+          "text": '{{ "On" if is_state("media_player.bedroom_tv", "on") else "Off" }}'
+      - obj: "p2b33" # icon
+        properties:
+          "text_color": '{{ "#2196f3" if is_state("media_player.bedroom_tv", "on") else "#6F6F6F" }}'
+      - obj: "p2b32" # icon background
+        properties:
+          "bg_color": '{{ "#1d3447" if is_state("media_player.bedroom_tv", "on") else "#2C2C2C" }}'
+
+
+
+      # Settings
+      - obj: "p4b4" # slider
+        properties:
+          "val": "{{ state_attr('light.plate02_backlight', 'brightness') if state_attr('light.plate02_backlight', 'brightness') != None else 0 }}"
+        event:
+          "changed":
+            - service: light.turn_on
+              data:
+                entity_id: light.plate02_backlight
+                brightness:  "{{ val }}"
+          "up":
+            - service: light.turn_on
+              data:
+                entity_id: light.plate02_backlight
+                brightness:  "{{ val }}"
+
+      - obj: "p4b10" # uptime
+        properties:
+          "text": '{{ (state_attr("openhasp.plate02", "uptime") / 60) | round() }} minutes'
+
+      - obj: "p4b12" # version
+        properties:
+          "text": '{{ state_attr("openhasp.plate02", "version") }}'
+
+      - obj: "p4b14" # friendly name
+        properties:
+          "text": '{{ state_attr("openhasp.plate02", "friendly_name") }}'
+

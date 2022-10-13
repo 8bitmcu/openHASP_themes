@@ -1,0 +1,146 @@
+{"id":0,"bg_color":"#111"}
+{"page":1,"id":0,"bg_color":"#111"}
+{"page":2,"id":0,"bg_color":"#111"}
+{"page":3,"id":0,"bg_color":"#111"}
+{"page":4,"id":0,"bg_color":"#111"}
+
+
+{"page":0,"id":1,"obj":"label","x":5,"y":5,"h":30,"w":320,"text":"2022/10/12  3:42 PM","align":1, "text_color":"#FFF"}
+
+
+
+
+{"page":1,"id":1,"obj":"label","x":20,"y":35,"w":200,"h":40,"text":"Sensors", "text_font": 32}
+
+{"page":1,"id":2,"obj":"obj","x":5,"y":75,"w":152,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":1,"id":3,"obj":"label","x":25,"y":87,"w":200,"h":40,"text":"Temperature", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":1,"id":4,"obj":"label","x":25,"y":110,"w":200,"h":40,"text":"27.2°C", "text_font": 24}
+
+{"page":1,"id":5,"obj":"obj","x":162,"y":75,"w":152,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":1,"id":6,"obj":"label","x":182,"y":87,"w":200,"h":40,"text":"Humidity", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":1,"id":7,"obj":"label","x":182,"y":110,"w":200,"h":40,"text":"52%", "text_font": 24}
+
+
+{"page":1,"id":8,"obj":"label","x":20,"y":155,"w":200,"h":40,"text":"Devices", "text_font": 32}
+
+{"page":1,"id":11,"obj":"obj","x":5,"y":195,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":1,"id":12,"obj":"obj","x":15,"y":200,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#493416","click":false}
+{"page":1,"id":13,"obj":"label","x":23,"y":205,"w":65,"h":65,"text":"\uE769", "text_font": 48, "text_color":"#e88c03"}
+{"page":1,"id":14,"obj":"label","x":100,"y":205,"w":200,"h":40,"text":"Ceiling Lamp", "text_font": 24}
+{"page":1,"id":15,"obj":"label","x":100,"y":235,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
+
+{"page":1,"id":21,"obj":"obj","x":5,"y":275,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":1,"id":22,"obj":"obj","x":15,"y":280,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#253926","click":false}
+{"page":1,"id":23,"obj":"label","x":23,"y":285,"w":140,"h":140,"text":"\uE01B", "text_font": 48, "text_color":"#4CAF50"}
+{"page":1,"id":24,"obj":"label","x":100,"y":285,"w":200,"h":40,"text":"A/C Fan", "text_font": 24}
+{"page":1,"id":25,"obj":"label","x":100,"y":315,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
+
+{"page":1,"id":31,"obj":"obj","x":5,"y":355,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":1,"id":32,"obj":"obj","x":15,"y":360,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#2c2c2c","click":false}
+{"page":1,"id":33,"obj":"label","x":23,"y":365,"w":140,"h":140,"text":"\uE210", "text_font": 48, "text_color":"#6F6F6F"}
+{"page":1,"id":34,"obj":"label","x":100,"y":365,"w":200,"h":40,"text":"Window Fan", "text_font": 24}
+{"page":1,"id":35,"obj":"label","x":100,"y":395,"w":200,"h":40,"text":"Off", "text_font": 16, "text_color":"#9b9b9b"}
+
+
+
+
+{"page":2,"id":1,"obj":"label","x":20,"y":35,"w":140,"h":40,"text":"Devices", "text_font": 32}
+
+{"page":2,"id":11,"obj":"obj","x":5,"y":75,"w":310,"h":115,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":2,"id":12,"obj":"obj","x":15,"y":80,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#493416","click":false}
+{"page":2,"id":13,"obj":"label","x":23,"y":85,"w":65,"h":65,"text":"\uE6B5", "text_font": 48, "text_color":"#e88c03"}
+{"page":2,"id":14,"obj":"label","x":100,"y":85,"w":200,"h":40,"text":"Bedside Lamp", "text_font": 24}
+{"page":2,"id":15,"obj":"label","x":100,"y":115,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":2,"id":16,"obj":"slider","x":25,"y":160,"h":15,"w":270,"min":0,"max":100}
+
+{"page":2,"id":21,"obj":"obj","x":5,"y":195,"w":310,"h":115,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":2,"id":22,"obj":"obj","x":15,"y":200,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#493416","click":false}
+{"page":2,"id":23,"obj":"label","x":23,"y":205,"w":65,"h":65,"text":"\uE335", "text_font": 48, "text_color":"#e88c03"}
+{"page":2,"id":24,"obj":"label","x":100,"y":205,"w":200,"h":40,"text":"Chromatic Neopixel", "text_font": 24}
+{"page":2,"id":25,"obj":"label","x":100,"y":235,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":2,"id":26,"obj":"slider","x":25,"y":280,"h":15,"w":270,"min":0,"max":100}
+
+{"page":2,"id":31,"obj":"obj","x":5,"y":315,"w":310,"h":115,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":2,"id":32,"obj":"obj","x":15,"y":320,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false}
+{"page":2,"id":33,"obj":"label","x":23,"y":325,"w":65,"h":65,"text":"\uE502", "text_font": 48, "text_color":"#2196F3"}
+{"page":2,"id":34,"obj":"label","x":100,"y":325,"w":200,"h":40,"text":"Samsung TV", "text_font": 24}
+{"page":2,"id":35,"obj":"label","x":100,"y":355,"w":200,"h":40,"text":"On", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":2,"id":36,"obj":"slider","x":25,"y":400,"h":15,"w":150,"min":0,"max":100}
+{"page":2,"id":37,"obj":"label","x":190,"y":387,"text":"\uE4AE", "text_font": 32,"click":true}
+{"page":2,"id":38,"obj":"label","x":230,"y":387,"text":"\uE3E4", "text_font": 32,"click":true}
+{"page":2,"id":39,"obj":"label","x":270,"y":387,"text":"\uE4AD", "text_font": 32,"click":true}
+
+
+
+
+{"page":3,"id":1,"obj":"obj","x":5,"y":35,"w":100,"h":35,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":3,"id":2,"obj":"label","x":13,"y":39,"w":100,"h":35,"text":"\uF40B", "text_font": 24, "text_color":"#ffeb3b"}
+{"page":3,"id":3,"obj":"label","x":43,"y":43,"w":100,"h":35,"text":"132.6w", "text_font": 16}
+
+{"page":3,"id":4,"obj":"obj","x":110,"y":35,"w":100,"h":35,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":3,"id":5,"obj":"label","x":118,"y":39,"w":100,"h":35,"text":"\uE150", "text_font": 24, "text_color":"#4caf50"}
+{"page":3,"id":6,"obj":"label","x":143,"y":43,"w":100,"h":35,"text":"10:00AM", "text_font": 16}
+
+{"page":3,"id":7,"obj":"obj","x":215,"y":35,"w":100,"h":35,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":3,"id":8,"obj":"label","x":223,"y":39,"w":100,"h":35,"text":"\uE565", "text_font": 24, "text_color":"#2196F3"}
+{"page":3,"id":9,"obj":"label","x":253,"y":43,"w":100,"h":35,"text":"Armed", "text_font": 16}
+
+
+{"page":3,"id":11,"obj":"obj","x":5,"y":75,"w":310,"h":115,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":3,"id":11,"obj":"obj","x":5,"y":75,"w":310,"h":355,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+
+{"page":3,"id":12,"obj":"obj","x":15,"y":80,"w":65,"h":65,"radius":35,"border_side":0,"bg_color":"#1D3447","click":false}
+{"page":3,"id":13,"obj":"label","x":23,"y":85,"w":65,"h":65,"text":"\uE51B", "text_font": 48, "text_color":"#2196F3"}
+{"page":3,"id":14,"obj":"label","x":100,"y":85,"w":200,"h":40,"text":"Set Timer", "text_font": 24}
+{"page":3,"id":15,"obj":"label","x":100,"y":115,"w":200,"h":40,"text":"Select a device to begin", "text_font": 16, "text_color":"#9b9b9b"}
+
+{"page":3,"id":16,"obj":"dropdown","x":100,"y":145,"w":185,"h":30,"options":"\nCeiling Lamp\nSamsung TV","text_font": 16,"border_side":0,"bg_color":"#282828"}
+
+
+{"page":3,"id":17,"obj":"label","x":100,"y":205,"w":200,"h":40,"text":"Set Duration", "text_font": 24}
+
+{"page":3,"id":18,"obj":"btn","x":100,"y":240,"w":60,"h":30,"toggle":false,"text":"\uE05D","align":"center","radius":5,"border_side":0,"bg_color":"#282828"}
+{"page":3,"id":19,"obj":"btn","x":185,"y":240,"w":60,"h":30,"toggle":false,"text":"\uE05D","align":"center","radius":5,"border_side":0,"bg_color":"#282828"}
+{"page":3,"id":20,"obj":"btn","x":100,"y":320,"w":60,"h":30,"toggle":false,"text":"\uE045","align":"center","radius":5,"border_side":0,"bg_color":"#282828"}
+{"page":3,"id":21,"obj":"btn","x":185,"y":320,"w":60,"h":30,"toggle":false,"text":"\uE045","align":"center","radius":5,"border_side":0,"bg_color":"#282828"}
+
+{"page":3,"id":22,"obj":"label","x":100,"y":280,"w":60,"h":40,"text":"01","align":"center","text_font": 24}
+{"page":3,"id":23,"obj":"label","x":160,"y":280,"w":25,"h":40,"text":":","align":"center","text_font": 24}
+{"page":3,"id":24,"obj":"label","x":185,"y":280,"w":60,"h":40,"text":"30","align":"center","text_font": 24}
+
+
+{"page":3,"id":25,"obj":"btn","x":25,"y":380,"w":270,"h":40,"text":"START TIMER","text_font": 24,"text_color":"#03a9f4","border_side":0,"radius":5,"bg_color":"#1c1c1c"}
+
+
+
+
+{"page":4,"id":1,"obj":"label","x":20,"y":35,"w":200,"h":40,"text":"Settings", "text_font": 32}
+{"page":4,"id":2,"obj":"obj","x":5,"y":75,"w":310,"h":75,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+{"page":4,"id":3,"obj":"label","x":25,"y":87,"w":200,"h":40,"text":"Backlight", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":4,"id":4,"obj":"slider","x":25,"y":120,"h":15,"w":270,"min":0,"max":100}
+
+
+{"page":4,"id":5,"obj":"label","x":20,"y":155,"w":200,"h":40,"text":"System", "text_font": 32}
+{"page":4,"id":6,"obj":"obj","x":5,"y":195,"w":310,"h":235,"radius":15,"click":true,"border_side":0,"bg_color":"#1c1c1c"}
+
+{"page":4,"id":7,"obj":"label","x":25,"y":205,"w":200,"h":40,"text":"IP Address", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":4,"id":8,"obj":"label","x":25,"y":225,"w":200,"h":40,"text":"%ip%", "text_font": 24}
+
+{"page":4,"id":9,"obj":"label","x":25,"y":260,"w":200,"h":40,"text":"Uptime", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":4,"id":10,"obj":"label","x":25,"y":280,"w":200,"h":40,"text":"361 minutes", "text_font": 24}
+
+{"page":4,"id":11,"obj":"label","x":25,"y":315,"w":200,"h":40,"text":"openHASP version", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":4,"id":12,"obj":"label","x":25,"y":335,"w":200,"h":40,"text":"0.6.3", "text_font": 24}
+
+{"page":4,"id":13,"obj":"label","x":25,"y":370,"w":200,"h":40,"text":"Friendly Name", "text_font": 16, "text_color":"#9b9b9b"}
+{"page":4,"id":14,"obj":"label","x":25,"y":390,"w":200,"h":40,"text":"plate02", "text_font": 24}
+
+
+
+
+{"page":0,"id":10,"obj":"btn","action":"prev","x":0,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE141","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32} 
+{"page":0,"id":11,"obj":"btn","action":"back","x":107,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE2DC","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32}  
+{"page":0,"id":12,"obj":"btn","action":"next","x":214,"y":435,"w":107,"h":45,"bg_color":"#1c1c1c","text":"\uE142","text_color":"#FFFFFF","radius":0,"border_side":0,"text_font":32}
+{"page":1,"id":0,"prev":4}
+{"page":4,"id":0,"next":1}
+
