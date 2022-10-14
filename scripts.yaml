@@ -1,0 +1,44 @@
+alias: plate02_settimer
+fields:
+  minutes:
+    name: minutes
+  hours:
+    name: hours
+  entity:
+    name: entity
+sequence:
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id:
+        - input_number.plate02_timer_hour
+        - input_number.plate02_timer_minute
+  - service: input_select.select_last
+    data: {}
+    target:
+      entity_id: input_select.plate02_timer_dropdown
+  - service: openhasp.command
+    target:
+      entity_id: openhasp.plate02
+    data:
+      keyword: jsonl
+      parameters: '{"page":3,"id":100,"obj":"msgbox","text":"Timer set for {{ (as_timestamp(now()) + (minutes*60)+(hours*3600)) | timestamp_custom("%I:%M %p") }}","options":["Close"]}'
+
+  - delay:
+      hours: "{{ hours }}"
+      minutes: "{{ minutes }}"
+  - service: homeassistant.turn_off
+    data:
+      entity_id: >-
+        {% if entity == 'Ceiling Lamp' %}light.ceiling_light_group
+        {% elifentity== 'Bedside Lamp' %}light.tasmota_3
+        {% elif entity == 'Chromatic Neopixel' %}light.wled_master
+        {% elif entity == 'All Lights' %}light.bedroom_lights
+        {% elif entity == 'A/C Fan' %}switch.s31_03
+        {% elif entity == 'Window Fan' %}switch.s31_02
+        {% elif entity == 'Samsung TV' %}media_player.bedroom_tv
+        {% endif %}
+icon: mdi:timer
+mode: parallel
+max: 10
