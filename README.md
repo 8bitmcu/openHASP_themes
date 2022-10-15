@@ -5,7 +5,7 @@ All of the look/feel inspired by the excellent Mushroom cards for Home Assistant
 
 ## How to use
 
-[Set up openHasp](https://www.openhasp.com/0.6.3/getting-started/) on your device.
+[Set up openHasp](https://www.openhasp.com/0.6.3/getting-started/) on your device. Select material dark as your theme
 
 If you just want to see how it looks on the device, [copying the content of pages.jsonl](https://www.openhasp.com/0.6.3/faq/#is-there-a-file-browser-built-in) to the microcontroller should be enough to get you started.
 
@@ -13,16 +13,15 @@ For a more complete installation, you will need to integrate the content of conf
 
 ## Setting up the page3 Timer functionality
 
-Make sure you've completed the previous steps before proceeding. We will need to tweak a script and configure 3 helpers for the Timer functionality to work.
+Make sure you've completed the previous steps before proceeding, or copy the relevent section from configuration.yaml
 
- 1. Create a dropdown helper with all the names of your entities. The last item in the dropdown should be "(none)" or "Nothing Selected", as we will use that option to reset the dropdown
+ 1. Create a dropdown helper with all the names of your entities you want to be able to control with a timer. This can also include groups. The last item in the dropdown should be "(none)" or "Nothing Selected", as we will default to that item
 
- 2. Edit the content of scripts.yaml. Replace all the entity names and ids with the entities you populated on the dropdown just earlier. Create a new script in Home Assistant with that content. I named mine plate02_settimer
+ 2. Edit the content of scripts.yaml. Replace all the entity names and ids with the entities you populated on the dropdown just earlier. Create a new script in Home Assistant with that content. I named my script plate02_settimer
 
  3. Create a Number helper named input_number.plate02_timer_hour with a minimum value of 0
 
  4. Create a Number helper named input_number.plate02_timer_minute with a minimum value of 0 and a maximum of 59
-
 
 ## Design/Style guide
 
@@ -30,8 +29,8 @@ The cards were designed for a 320x480 TFT lcd in portrait mode. The status bar i
 
 
 
-ps: media controls for the Samsung TV on page 2 aren't implemented
 
+ps: media controls for the Samsung TV on page 2 aren't implemented
 
 ## Screensots
 
