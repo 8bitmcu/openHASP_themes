@@ -13,7 +13,7 @@ For a more complete installation, you will need to integrate the content of conf
 
 ## Setting up the page3 Timer functionality
 
-Make sure you've completed the previous steps before proceeding. We will need to tweak a script and configure 3 helps for the Timer functionality to work.
+Make sure you've completed the previous steps before proceeding. We will need to tweak a script and configure 3 helpers for the Timer functionality to work.
 
  1. Create a dropdown helper with all the names of your entities. The last item in the dropdown should be "(none)" or "Nothing Selected", as we will use that option to reset the dropdown
 
