@@ -17,7 +17,7 @@ Make sure you've completed the previous steps before proceeding, or copy the rel
 
  1. Create a dropdown helper with all the names of your entities you want to be able to control with a timer. This can also include groups. The last item in the dropdown should be "(none)" or "Nothing Selected", as we will default to that item
 
- 2. Edit the content of scripts.yaml. Replace all the entity names and ids with the entities you populated on the dropdown just earlier. Create a new script in Home Assistant with that content. I named my script plate02_settimer
+ 2. Create a new Script in Home Assistant. I named my script plate02_settimer. Use the content from the included scripts.yaml. Replace all the entities name in the script.
 
  3. Create a Number helper named input_number.plate02_timer_hour with a minimum value of 0
 
