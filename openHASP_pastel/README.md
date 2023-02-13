@@ -16,7 +16,7 @@ Features:
 
 1. [Set up openHasp](https://www.openhasp.com/0.6.3/getting-started/) on your device. Select material dark as your theme.
 2. Copy the content of `pages.jsonl` to your device. See pages.jsonl customization section below
-3. Copy `openhasp_pastel.yaml` to your homeassistant folder. Edit and replace all instances of `plate05` to the name of your openhasp device. See Configuration Notes below
+3. Copy `openhasp_pastel.yaml` to your homeassistant folder. Edit and replace `plate05` with the name of your openHASP device. See openhasp_pastel.yaml customization below
 4. Edit your `configuration.yaml` and add the following:
 
 ```
