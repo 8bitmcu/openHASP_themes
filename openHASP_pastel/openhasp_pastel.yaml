@@ -1,0 +1,194 @@
+openhasp:
+  plate05:
+    objects:
+      # Page 1: Temperature and Humidity values
+      - obj: "p1b3" # Temperature
+        properties:
+          "text": '{{ states("sensor.bedroom_temp") | round(0) }}°C'
+
+      - obj: "p1b6" # Humidity
+        properties:
+          "text": '{{ states("sensor.bedroom_humidity") | round(0) }}%'
+
+      # Page 1: Scene Buttons
+      - obj: "p1b9" # Rock Playlist
+        event:
+          "down":
+            - service: scene.turn_on
+              target:
+                entity_id: scene.rock_playlist
+
+      - obj: "p1b12" # Meditation
+        event:
+          "down":
+            - service: scene.turn_on
+              target:
+                entity_id: scene.meditation
+
+      - obj: "p1b15" # Bedtime Routine
+        event:
+          "down":
+            - service: scene.turn_on
+              target:
+                entity_id: scene.bedtime_routine
+
+      - obj: "p1b18" # Morning Routine
+        event:
+          "down":
+            - service: scene.turn_on
+              target:
+                entity_id: scene.morning_routine
+
+      # Page 2:
+      - obj: "p2b1" # Window Fan
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("switch.window_fan", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.window_fan"
+
+      - obj: "p2b4" # A/C Fan
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("switch.ac_fan", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.ac_fan"
+
+      - obj: "p2b7" # Blinds
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("switch.blinds", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.blinds"
+
+      - obj: "p2b10" # Television
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("media_player.television", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "media_player.television"
+
+      - obj: "p2b13" # Vacuum
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("switch.roomba", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.roomba"
+
+      - obj: "p2b16" # Laptop
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("switch.laptop", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "switch.laptop"
+
+      # Page 3:
+      - obj: "p3b1" # Table lamp
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.table_lamp", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.table_lamp"
+
+      - obj: "p3b4" # Ceiling Light
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.ceiling_light", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.ceiling_light"
+
+      - obj: "p3b7" # NeoPixel
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.wled_master", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.wled_master"
+
+      - obj: "p3b10" # Outdoor Lamp
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.outdoor", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.outdoor"
+
+      - obj: "p3b13" # Vanity Lights
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.vanity", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.vanity"
+
+      - obj: "p3b16" # Table Lamp
+        properties:
+          "bg_color": '{{ "#caffbf" if is_state("light.table_lamp2", "on") else "#333" }}'
+        event:
+          "down":
+            - service: homeassistant.toggle
+              entity_id: "light.table_lamp2"
+
+      # Page 4:
+      - obj: "p4b1" # Pause
+        event:
+          "down":
+            - service: media_player.media_play_pause
+              data: {}
+              target:
+                entity_id: media_player.sonos_speaker
+      - obj: "p4b2" # Play/Pause icon
+        properties:
+          "text": '{{ "\uE3E4" if is_state("media_player.sonos_speaker", "playing") else "\uE40A" }}'
+      - obj: "p4b3" # Play/Pause text
+        properties:
+          "text": '{{ "Pause" if is_state("media_player.sonos_speaker", "playing") else "Play" }}'
+
+      - obj: "p4b4" # Toggle Repeat
+        event:
+          "down":
+            - service: media_player.repeat_set
+              data:
+                repeat: "{{ 'off' if is_state_attr('media_player.sonos_speaker', 'repeat', 'all') else 'all' }}"
+              target:
+                entity_id: media_player.sonos_speaker
+      - obj: "p4b5" # Repeat icon
+        properties:
+          "text": '{{ "\uE456" if is_state_attr("media_player.sonos_speaker", "repeat", "all") else "\uE457" }}'
+
+      - obj: "p4b7" # Toggle Shuffle
+        event:
+          "down":
+            - service: media_player.shuffle_set
+              data:
+                shuffle: "{{ not is_state_attr('media_player.sonos_speaker', 'shuffle', true) }}"
+              target:
+                entity_id: media_player.sonos_speaker
+      - obj: "p4b8" # Shuffle icon
+        properties:
+          "text": '{{ "\uE49D" if is_state_attr("media_player.sonos_speaker", "shuffle", true) else "\uE49E" }}'
+
+      - obj: "p4b10" # Previous
+        event:
+          "down":
+            - service: media_player.media_previous_track
+              data: {}
+              target:
+                entity_id: media_player.sonos_speaker
+
+      - obj: "p4b13" # Next
+        event:
+          "down":
+            - service: media_player.media_next_track
+              data: {}
+              target:
+                entity_id: media_player.sonos_speaker
+
