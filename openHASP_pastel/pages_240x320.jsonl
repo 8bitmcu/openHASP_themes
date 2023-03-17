@@ -1,0 +1,111 @@
+{"id":0,"bg_color":"#000"}
+{"page":1,"id":0,"bg_color":"#000"}
+{"page":2,"id":0,"bg_color":"#000"}
+{"page":3,"id":0,"bg_color":"#000"}
+{"page":4,"id":0,"bg_color":"#000"}
+
+{"page":0,"id":1,"obj":"obj","action":"p1","x":2,"y":2,"w":55,"h":55,"radius":20,"click":true,"border_side":0,"value_font":24,"value_color":"#000","bg_color":"#bdb2ff","value_str":"\uE2DC"}
+{"page":0,"id":2,"obj":"obj","action":"p2","x":62,"y":2,"w":55,"h":55,"radius":20,"click":true,"border_side":0,"value_font":24,"value_color":"#000","bg_color":"#caffbf","value_str":"\uF40B"}
+{"page":0,"id":3,"obj":"obj","action":"p3","x":123,"y":2,"w":55,"h":55,"radius":20,"click":true,"border_side":0,"value_font":24,"value_color":"#000","bg_color":"#fdffb6","value_str":"\uE5A8"}
+{"page":0,"id":4,"obj":"obj","action":"p4","x":183,"y":2,"w":55,"h":55,"radius":20,"click":true,"border_side":0,"value_font":24,"value_color":"#000","bg_color":"#ffc6ff","value_str":"\uE75A"}
+
+
+
+{"page":1,"id":1,"obj":"obj","x":2,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#bdb2ff"}
+{"page":1,"id":2,"obj":"label","x":10,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE50F"}
+{"page":1,"id":3,"obj":"label","x":15,"y":105,"w":115,"h":70,"text_color":"#000","text_font":14,"text":"xx.x°C"}
+
+{"page":1,"id":4,"obj":"obj","x":122,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#bdb2ff"}
+{"page":1,"id":5,"obj":"label","x":130,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE58E"}
+{"page":1,"id":6,"obj":"label","x":135,"y":105,"w":115,"h":70,"text_color":"#000","text_font":14,"text":"xx%"}
+
+{"page":1,"id":7,"obj":"obj","x":2,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":1,"id":8,"obj":"label","x":10,"y":160,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE75A"}
+{"page":1,"id":9,"obj":"label","x":15,"y":195,"w":115,"h":70,"text_color":"#FFF","text_font":14,"text":"Rock Playlist"}
+
+{"page":1,"id":10,"obj":"obj","x":122,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":1,"id":11,"obj":"label","x":130,"y":160,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE5FA"}
+{"page":1,"id":12,"obj":"label","x":135,"y":195,"w":115,"h":70,"text_color":"#FFF","text_font":14,"text":"Meditation"}
+
+{"page":1,"id":13,"obj":"obj","x":2,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":1,"id":14,"obj":"label","x":10,"y":245,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE2E3"}
+{"page":1,"id":15,"obj":"label","x":15,"y":280,"w":115,"h":70,"text_color":"#FFF","text_font":14,"text":"Bedtime Routine"}
+
+{"page":1,"id":16,"obj":"obj","x":122,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":1,"id":17,"obj":"label","x":130,"y":245,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE176"}
+{"page":1,"id":18,"obj":"label","x":135,"y":280,"w":115,"h":70,"text_color":"#FFF","text_font":14,"text":"Morning Routine"}
+
+
+
+{"page":2,"id":1,"obj":"obj","x":2,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":2,"obj":"label","x":10,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE210"}
+{"page":2,"id":3,"obj":"label","x":15,"y":105,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Window Fan"}
+
+{"page":2,"id":4,"obj":"obj","x":122,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":5,"obj":"label","x":130,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE01B"}
+{"page":2,"id":6,"obj":"label","x":135,"y":105,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"A/C Fan"}
+
+{"page":2,"id":7,"obj":"obj","x":2,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":8,"obj":"label","x":10,"y":160,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE0AC"}
+{"page":2,"id":9,"obj":"label","x":15,"y":195,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Blinds"}
+
+{"page":2,"id":10,"obj":"obj","x":122,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":11,"obj":"label","x":130,"y":160,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE502"}
+{"page":2,"id":12,"obj":"label","x":135,"y":195,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Televison"}
+
+{"page":2,"id":13,"obj":"obj","x":2,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":14,"obj":"label","x":10,"y":245,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE70D"}
+{"page":2,"id":15,"obj":"label","x":15,"y":280,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Vacuum"}
+
+{"page":2,"id":16,"obj":"obj","x":122,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#caffbf"}
+{"page":2,"id":17,"obj":"label","x":130,"y":245,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE322"}
+{"page":2,"id":18,"obj":"label","x":135,"y":280,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Laptop"}
+
+
+
+{"page":3,"id":1,"obj":"obj","x":2,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":2,"obj":"label","x":10,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE6B5"}
+{"page":3,"id":3,"obj":"label","x":15,"y":105,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Table Lamp"}
+
+{"page":3,"id":4,"obj":"obj","x":122,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":5,"obj":"label","x":130,"y":75,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE769"}
+{"page":3,"id":6,"obj":"label","x":135,"y":105,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Ceiling Light"}
+
+{"page":3,"id":7,"obj":"obj","x":2,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":8,"obj":"label","x":10,"y":160,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE335"}
+{"page":3,"id":9,"obj":"label","x":15,"y":195,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"NeoPixel"}
+
+{"page":3,"id":10,"obj":"obj","x":122,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":11,"obj":"label","x":130,"y":160,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uF054"}
+{"page":3,"id":12,"obj":"label","x":135,"y":195,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Outdoor Lamp"}
+
+{"page":3,"id":13,"obj":"obj","x":2,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":14,"obj":"label","x":10,"y":245,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uF1E1"}
+{"page":3,"id":15,"obj":"label","x":15,"y":280,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Vanity Lights"}
+
+{"page":3,"id":16,"obj":"obj","x":122,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#fdffb6"}
+{"page":3,"id":17,"obj":"label","x":130,"y":245,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE6B5"}
+{"page":3,"id":18,"obj":"label","x":135,"y":280,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Table Lamp"}
+
+
+
+{"page":4,"id":1,"obj":"obj","x":2,"y":65,"w":115,"h":165,"radius":20,"click":true,"border_side":0,"bg_color":"#ffc6ff"}
+{"page":4,"id":2,"obj":"label","x":10,"y":160,"w":115,"h":70,"text_color":"#000","text_font":24,"text":"\uE3E4"}
+{"page":4,"id":3,"obj":"label","x":15,"y":195,"w":115,"h":70,"text_color":"#000","text_font":16,"text":"Pause"}
+
+{"page":4,"id":4,"obj":"obj","x":122,"y":65,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":4,"id":5,"obj":"label","x":130,"y":75,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE456"}
+{"page":4,"id":6,"obj":"label","x":135,"y":105,"w":115,"h":70,"text_color":"#FFF","text_font":16,"text":"Repeat"}
+
+{"page":4,"id":7,"obj":"obj","x":122,"y":150,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":4,"id":8,"obj":"label","x":130,"y":160,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE49E"}
+{"page":4,"id":9,"obj":"label","x":135,"y":195,"w":115,"h":70,"text_color":"#FFF","text_font":16,"text":"Shuffle"}
+
+{"page":4,"id":10,"obj":"obj","x":2,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":4,"id":11,"obj":"label","x":10,"y":245,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE4AE"}
+{"page":4,"id":12,"obj":"label","x":15,"y":280,"w":115,"h":70,"text_color":"#FFF","text_font":16,"text":"Previous"}
+
+{"page":4,"id":13,"obj":"obj","x":122,"y":235,"w":115,"h":80,"radius":20,"click":true,"border_side":0,"bg_color":"#333"}
+{"page":4,"id":14,"obj":"label","x":130,"y":245,"w":115,"h":70,"text_color":"#FFF","text_font":24,"text":"\uE4AD"}
+{"page":4,"id":15,"obj":"label","x":135,"y":280,"w":115,"h":70,"text_color":"#FFF","text_font":16,"text":"Next"}
+
