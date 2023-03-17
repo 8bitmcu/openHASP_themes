@@ -39,10 +39,13 @@ Edit the content of openhasp_pastel.yaml so it reflects the devices that you hav
 
 ## Screensots
 
-### page 1 and page 2
+### 320x480 page 1 and page 2
 ![alt text](assets/page1.png)  ![alt text](assets/page2.png)
 
-### page 3 and page 4
+### 320x480 page 3 and page 4
 ![alt text](assets/page3.png)  ![alt text](assets/page4.png)
 
-```
+
+### 240x320 page 1-4: 
+
+![alt text](assets/page1_240.png)  ![alt text](assets/page2_240.png)  ![alt text](assets/page3_240.png)  ![alt text](assets/page4_240.png)
